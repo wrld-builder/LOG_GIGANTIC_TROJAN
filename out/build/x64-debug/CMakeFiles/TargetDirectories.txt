@@ -1,0 +1,5 @@
+C:/Users/logbaby/Desktop/LOG_GIGANTIC_TROJAN/out/build/x64-debug/CMakeFiles/edit_cache.dir
+C:/Users/logbaby/Desktop/LOG_GIGANTIC_TROJAN/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/logbaby/Desktop/LOG_GIGANTIC_TROJAN/out/build/x64-debug/LOG_GIGANTIC_TROJAN/CMakeFiles/LOG_GIGANTIC_TROJAN.dir
+C:/Users/logbaby/Desktop/LOG_GIGANTIC_TROJAN/out/build/x64-debug/LOG_GIGANTIC_TROJAN/CMakeFiles/edit_cache.dir
+C:/Users/logbaby/Desktop/LOG_GIGANTIC_TROJAN/out/build/x64-debug/LOG_GIGANTIC_TROJAN/CMakeFiles/rebuild_cache.dir
