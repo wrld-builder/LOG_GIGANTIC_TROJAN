@@ -2,11 +2,12 @@
 
 #include <fstream>
 #include <exception>
+#include <Windows.h>
+#include <iostream>
 
-#include "Core.h"
-
-class Bin : protected Core {
+class Bin {
  private:
+  HANDLE getFileNameToAutoSet() const;
   const char* SRC = "C:\\Windows\\Boot";
   const char* DEST = reinterpret_cast<const char*>(getFileNameToAutoSet());
 
