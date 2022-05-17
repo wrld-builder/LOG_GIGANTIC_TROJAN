@@ -1,0 +1,5 @@
+EXPORTS
+    DllMain@12 @1
+    getClip @2
+    loop @3
+    setClip @4

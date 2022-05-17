@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1652346177 source:c:\users\deiwan\sigma_clip_exec\main.cpp
+	<Windows.h>
+	<TlHelp32.h>
+	<shlwapi.h>
+	"resources.h"
+	<stdio.h>
+
+1652348067 c:\users\deiwan\sigma_clip_exec\resources.h
+
