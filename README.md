@@ -25,7 +25,7 @@
 <li>Скачиваем архив</li>
 <li>Открываем в Visual Studio (.sln)</li>
 <li>Собираем конфигурацию CMake (Ctrl + S в CMakeLists.txt)</li>
-<li>Собираем проект (Ctrl + B)</li>
+<li>Собираем проект (Ctrl + Shift + B)</li>
 <li>Открываем исполняемый файл в папке out/build/x64-realese/LOG_GIGANTIC_TROJAN</li><br>
 
 <h1>Навигация:</h1><br>
